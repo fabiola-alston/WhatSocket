@@ -11,6 +11,7 @@ namespace WhatSocket2
         public int homePort;
         public int addressPort;
         public string localIP;
+        public string username;
 
         public Form1(int homePort)
         {
@@ -32,7 +33,7 @@ namespace WhatSocket2
         {
             messageBox.Invoke(new Action(() =>
             {
-                messageBox.AppendText($"Client ({clientEndpoint}): {message}" + "\r\n");
+                messageBox.AppendText($"{message}" + "\r\n");
             }));
         }
 
@@ -40,9 +41,8 @@ namespace WhatSocket2
         {
             if (!string.IsNullOrWhiteSpace(message))
             {
-                messageBox.AppendText($"You ({this.homePort}): {message}" + "\r\n");
+                messageBox.AppendText($"{username}: {message}" + "\r\n");
 
-                // Send message to the specified address port
                 Program.SendMessage(localIP, addressPort, message);
             }
         }
@@ -80,6 +80,18 @@ namespace WhatSocket2
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(usernameBox.Text))
+            {
+                username = "User";
+            }
+            else
+            {
+                username = usernameBox.Text;
+            }
         }
     }
 }

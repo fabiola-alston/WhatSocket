@@ -82,7 +82,7 @@ namespace WhatSocket2
                 using (Socket clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp))
                 {
                     clientSocket.Connect(new IPEndPoint(IPAddress.Parse(serverIP), serverPort));
-                    byte[] data = Encoding.ASCII.GetBytes(message);
+                    byte[] data = Encoding.ASCII.GetBytes($"{form.username} ({form.homePort}): {message}");
                     clientSocket.Send(data);
                 }
             }
