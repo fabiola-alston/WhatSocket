@@ -31,12 +31,14 @@ namespace WhatSocket2
                 }
             }
 
+            // starts the server when application is initialized
             StartServer(port);
 
             form = new Form1(port);
             Application.Run(form);
         }
 
+        // method that starts up server
         public static void StartServer(int port)
         {
             serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -45,6 +47,7 @@ namespace WhatSocket2
             Task.Run(() => AcceptClientsAsync());
         }
 
+        // method that accepts communication 
         private static async Task AcceptClientsAsync()
         {
             while (true)
@@ -75,6 +78,7 @@ namespace WhatSocket2
             }
         }
 
+        // method that handles sending the message 
         public static void SendMessage(string serverIP, int serverPort, string message)
         {
             try

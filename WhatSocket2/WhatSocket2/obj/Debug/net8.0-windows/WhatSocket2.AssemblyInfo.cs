@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WhatSocket2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e865c55512b064928e509df27be4e2ac39aa199")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a200d30a74f4a44466ba0204fb7e4da0ba833b4e")]
 [assembly: System.Reflection.AssemblyProductAttribute("WhatSocket2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WhatSocket2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
