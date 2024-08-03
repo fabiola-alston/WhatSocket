@@ -77,15 +77,15 @@
             label2.AutoSize = true;
             label2.Location = new Point(12, 95);
             label2.Name = "label2";
-            label2.Size = new Size(62, 15);
+            label2.Size = new Size(126, 15);
             label2.TabIndex = 4;
-            label2.Text = "Your port: ";
+            label2.Text = "Server started on port: ";
             // 
             // homePortBox
             // 
-            homePortBox.Location = new Point(80, 92);
+            homePortBox.Location = new Point(144, 92);
             homePortBox.Name = "homePortBox";
-            homePortBox.Size = new Size(70, 23);
+            homePortBox.Size = new Size(80, 23);
             homePortBox.TabIndex = 5;
             // 
             // label3

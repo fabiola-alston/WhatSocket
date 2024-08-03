@@ -4,6 +4,7 @@ namespace WhatSocket2
     {
         public int homePort;
         public int addressPort;
+        public string sentMessage;
 
         public Form1(int homePort, int addressPort)
         {
@@ -17,15 +18,25 @@ namespace WhatSocket2
 
         }
 
-        private void sendMessage()
+        // method for initializing chat
+        public void InitChat()
         {
-            string message = entryBox.Text;
+            messageBox.AppendText($"Initializing server on port {this.homePort}..." + "\r\n");
+            messageBox.AppendText("Server started. Begin chat. :)" + "\r\n");
+        }
+
+        // method for sending message (button)
+        private void sendMessage(string message)
+        {
+            this.sentMessage = message;
             messageBox.AppendText($"You ({this.homePort}): {message}" + "\r\n");
         }
 
+
         private void sendButton_Click(object sender, EventArgs e)
         {
-            sendMessage();
+            string message = entryBox.Text;
+            sendMessage(message);
         }
 
         private void addressPortBox_TextChanged(object sender, EventArgs e)
