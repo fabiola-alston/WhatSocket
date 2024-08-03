@@ -1,37 +1,51 @@
+using System;
+using System.Linq;
+using System.Net;
+using System.Net.Sockets;
+using System.Windows.Forms;
+
 namespace WhatSocket2
 {
     public partial class Form1 : Form
     {
         public int homePort;
         public int addressPort;
-        public string sentMessage;
+        public string localIP;
 
-        public Form1(int homePort, int addressPort)
+        public Form1(int homePort)
         {
             InitializeComponent();
             this.homePort = homePort;
-            this.addressPort = addressPort;
 
             messageBox.ReadOnly = true;
             homePortBox.Enabled = false;
             homePortBox.Text = this.homePort.ToString();
-
         }
 
-        // method for initializing chat
         public void InitChat()
         {
             messageBox.AppendText($"Initializing server on port {this.homePort}..." + "\r\n");
             messageBox.AppendText("Server started. Begin chat. :)" + "\r\n");
         }
 
-        // method for sending message (button)
-        private void sendMessage(string message)
+        public void ReceiveMessage(string message, string clientEndpoint)
         {
-            this.sentMessage = message;
-            messageBox.AppendText($"You ({this.homePort}): {message}" + "\r\n");
+            messageBox.Invoke(new Action(() =>
+            {
+                messageBox.AppendText($"Client ({clientEndpoint}): {message}" + "\r\n");
+            }));
         }
 
+        private void sendMessage(string message)
+        {
+            if (!string.IsNullOrWhiteSpace(message))
+            {
+                messageBox.AppendText($"You ({this.homePort}): {message}" + "\r\n");
+
+                // Send message to the specified address port
+                Program.SendMessage(localIP, addressPort, message);
+            }
+        }
 
         private void sendButton_Click(object sender, EventArgs e)
         {
@@ -41,7 +55,31 @@ namespace WhatSocket2
 
         private void addressPortBox_TextChanged(object sender, EventArgs e)
         {
-            this.addressPort = int.Parse(addressPortBox.Text);
+            try
+            {
+                this.addressPort = int.Parse(addressPortBox.Text);
+                localIP = GetLocalIPAddress();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private string GetLocalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+            var ipAddress = host.AddressList.FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork);
+            if (ipAddress == null)
+            {
+                throw new Exception("No network adapters with an IPv4 address in the system!");
+            }
+            return ipAddress.ToString();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

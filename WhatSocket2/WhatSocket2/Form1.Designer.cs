@@ -36,6 +36,7 @@
             homePortBox = new TextBox();
             label3 = new Label();
             addressPortBox = new TextBox();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -105,12 +106,23 @@
             addressPortBox.TabIndex = 7;
             addressPortBox.TextChanged += addressPortBox_TextChanged;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(12, 421);
+            label4.Name = "label4";
+            label4.Size = new Size(108, 15);
+            label4.TabIndex = 8;
+            label4.Text = "Enter username: ";
+            label4.Click += label4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.GradientInactiveCaption;
             ClientSize = new Size(484, 461);
+            Controls.Add(label4);
             Controls.Add(addressPortBox);
             Controls.Add(label3);
             Controls.Add(homePortBox);
@@ -135,5 +147,6 @@
         private TextBox homePortBox;
         private Label label3;
         private TextBox addressPortBox;
+        private Label label4;
     }
 }
