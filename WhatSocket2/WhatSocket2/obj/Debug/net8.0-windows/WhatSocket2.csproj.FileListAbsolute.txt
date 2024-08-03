@@ -1,0 +1,17 @@
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\bin\Debug\net8.0-windows\WhatSocket2.exe
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\bin\Debug\net8.0-windows\WhatSocket2.deps.json
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\bin\Debug\net8.0-windows\WhatSocket2.runtimeconfig.json
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\bin\Debug\net8.0-windows\WhatSocket2.dll
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\bin\Debug\net8.0-windows\WhatSocket2.pdb
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.Form1.resources
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.csproj.GenerateResource.cache
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.AssemblyInfoInputs.cache
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.AssemblyInfo.cs
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.csproj.CoreCompileInputs.cache
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.sourcelink.json
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.dll
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\refint\WhatSocket2.dll
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.pdb
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\WhatSocket2.genruntimeconfig.cache
+C:\Users\Fabiola\Documents\TEC\II Semestre\Algoritmos y estructuras de datos I\WhatSocket\WhatSocket2\WhatSocket2\obj\Debug\net8.0-windows\ref\WhatSocket2.dll
