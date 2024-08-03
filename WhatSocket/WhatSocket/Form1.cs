@@ -13,7 +13,7 @@ namespace WhatSocket
 {
     public partial class Form1 : Form
     {
-        private int hostPort = 5000;
+        private int hostPort = 8000;
         private int addressPort;
         private string addressPortString;
 
